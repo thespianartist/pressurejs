@@ -4,8 +4,9 @@ var block = {
   },
 
   change: function(force, event){
-    this.innerHTML = force;
-    console.log('change', event);
+     this.style.width = Pressure.map(force, 0, 1, 50, 300) + 'px';
+     this.innerHTML = force;
+     console.log('change', event);
   },
 
   startDeepPress: function(event){
@@ -19,6 +20,7 @@ var block = {
   end: function(){
     console.log('end');
     this.innerHTML = 0;
+    this.style.width = '50px';
   },
 
   unsupported: function(){
@@ -31,6 +33,6 @@ Pressure.set(document.querySelectorAll('#elemento1'), block, {preventDefault: tr
 
 Pressure.set(document.querySelectorAll('#joven'), {
   start: function(event){
-    console.log('cool it started');
+    console.log('Se escucha el evento');
   }
 }, {only: '3d', preventDefault: false});
