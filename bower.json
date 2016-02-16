@@ -1,0 +1,28 @@
+{
+  "name": "PressureJS",
+  "authors": [
+    "Uriel Rodolfo Ramirez Moreno <topzihxc@gmail.com>"
+  ],
+  "description": "Un ejemplo de como usar la libreria PressureJS",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "pressure",
+    "bower",
+    "tutorial",
+    "3D",
+    "touch"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "pressure": "^0.0.4"
+  }
+}
