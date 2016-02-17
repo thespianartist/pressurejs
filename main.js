@@ -1,20 +1,17 @@
 var block = {
   start: function(event){
-    console.log('start', event);
   },
 
   change: function(force, event){
      this.style.width = Pressure.map(force, 0, 1, 50, 300) + 'px';
      this.innerHTML = force;
-     console.log('change', event);
   },
 
   startDeepPress: function(event){
-    console.log('start deep press', event);
+
   },
 
   endDeepPress: function(){
-    console.log('end deep press');
   },
 
   end: function(){
@@ -25,7 +22,8 @@ var block = {
 
   unsupported: function(){
     console.log(this);
-    this.innerHTML = 'Your device / browser does not support this :(';
+    this.innerHTML = "Tu dispositivo y/o navegador no es compatible ): ";
+      this.style.width = '100px';
   }
 }
 
