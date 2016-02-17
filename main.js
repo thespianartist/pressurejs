@@ -26,7 +26,6 @@ Pressure.set('#presion', {
     this.innerHTML = "Tu dispositivo y/o navegador no es compatible ): ";
       this.style.width = '100px';
   },
-
 });
 
 //3D touch en imagen
