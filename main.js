@@ -1,5 +1,6 @@
-var block = {
-  
+//Medir presión
+Pressure.set('#presion', {
+
   start: function(event){
   },
 
@@ -9,7 +10,6 @@ var block = {
   },
 
   startDeepPress: function(event){
-
   },
 
   endDeepPress: function(){
@@ -25,14 +25,13 @@ var block = {
     console.log(this);
     this.innerHTML = "Tu dispositivo y/o navegador no es compatible ): ";
       this.style.width = '100px';
-  }
-}
+  },
 
-//Elemento 1
-Pressure.set(document.querySelectorAll('#elemento1'), block );
+});
 
-//Imagen
-Pressure.set(document.querySelectorAll('#joven'), {
+//3D touch en imagen
+
+Pressure.set('#joven', {
   start: function(event){
     console.log('Se escucha el evento');
   }
