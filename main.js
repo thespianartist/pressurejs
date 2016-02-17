@@ -1,4 +1,5 @@
 var block = {
+  
   start: function(event){
   },
 
@@ -27,8 +28,10 @@ var block = {
   }
 }
 
-Pressure.set(document.querySelectorAll('#elemento1'), block, {preventDefault: true});
+//Elemento 1
+Pressure.set(document.querySelectorAll('#elemento1'), block );
 
+//Imagen
 Pressure.set(document.querySelectorAll('#joven'), {
   start: function(event){
     console.log('Se escucha el evento');
